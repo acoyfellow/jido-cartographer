@@ -1,0 +1,83 @@
+.dockerignore
+  s_9ea43334029fe9::t_b363b970287436 1-6
+.formatter.exs
+  s_9ea43334029fe9::t_e5c70947fdae6b 1-4
+LICENSE
+  s_99b55ecf7d26fa::t_525b0196a585e9 1-21
+SPEC.md
+  s_9ea43334029fe9::t_6e884e333a51ce 1-34
+benchmark-results.json
+  s_9ea43334029fe9::t_60cda8bbb6e381 1-43
+bin/start
+  s_99b55ecf7d26fa::t_d884d0349fae0e 1-7
+lib/jido_cartographer.ex
+  s_9ea43334029fe9::t_b1a18732f945a0 1-3
+lib/jido_cartographer/api.ex
+  s_99b55ecf7d26fa::t_ede7aa00a7d567 1-61
+lib/jido_cartographer/extractor.ex
+  s_9ea43334029fe9::t_628370161ad354 1-102
+lib/jido_cartographer/file_agent.ex
+  s_9ea43334029fe9::t_7c77a6cf8b8e0f 1-29
+lib/jido_cartographer/indexer.ex
+  s_99b55ecf7d26fa::t_ba0d3879da08cb 1-107
+lib/jido_cartographer/jido.ex
+  s_9ea43334029fe9::t_400ebe84f8b700 1-3
+lib/jido_cartographer/languages.ex
+  s_9ea43334029fe9::t_e282104440d1f4 1-34
+lib/jido_cartographer/repository.ex
+  s_99b55ecf7d26fa::t_e11b15680220ff 1-69
+lib/jido_cartographer/result_store.ex
+  s_99b55ecf7d26fa::t_e4c3b3c3a75b17 1-52
+lib/jido_cartographer/snapshot.ex
+  s_99b55ecf7d26fa::t_4d1466d78c4bbe 1-148
+mix.exs
+  s_99b55ecf7d26fa::t_b5416308df241f 1-30
+mix.lock
+  s_9ea43334029fe9::t_b0e9d497ec11eb 1-28
+test/api_test.exs
+  s_99b55ecf7d26fa::t_8750ced9f13f3a 1-33
+test/extractor_test.exs
+  s_9ea43334029fe9::t_c0a41015b4752d 1-30
+test/indexer_test.exs
+  s_99b55ecf7d26fa::t_1796e4095f6eac 1-59
+test/repository_test.exs
+  s_9ea43334029fe9::t_7bb165866d0619 1-33
+test/result_store_test.exs
+  s_99b55ecf7d26fa::t_fcd61c21aeae91 1-20
+test/snapshot_test.exs
+  s_99b55ecf7d26fa::t_65af70835030fc 1-52
+test/test_helper.exs
+  s_9ea43334029fe9::t_60ce478fbcf6de 1
+worker/package-lock.json
+  s_9ea43334029fe9::t_c2ffc1ed6f5af3 1-3221
+worker/src/ui.ts
+  s_9ea43334029fe9::t_01ba7698ac749b 1-33
+worker/tsconfig.json
+  s_9ea43334029fe9::t_178322c1617e72 1-13
+worker/wrangler.jsonc
+  s_9ea43334029fe9::t_8c1792a2fa1d2e 1-31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "7f322b237abb65cfb11a0401fb576a92e406960a",
+  "prompts": {},
+  "sessions": {
+    "s_99b55ecf7d26fa": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a01133-f7dc-78e5-bff4-bbe27a662c2a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jordan Coeyman <jcoeyman@cloudflare.com>"
+    },
+    "s_9ea43334029fe9": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a00c04-39b0-7c41-8f8c-319dfb49fbd0",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Jordan Coeyman <jcoeyman@cloudflare.com>"
+    }
+  }
+}
