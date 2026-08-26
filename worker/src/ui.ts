@@ -11,7 +11,7 @@ export const renderHome = (): string => `<!doctype html>
 <body>
 <main>
 <header><div><div class="eyebrow">Jido 2.x × BEAM concurrency</div><h1>codebase<br><span class="accent">cartographer</span></h1><p class="tagline">One lightweight Jido agent per source file. Deterministic facts fan out across BEAM processes, then fold into a measured code map.</p></div><div class="beam">● no LLM required</div></header>
-<form id="form"><input id="url" name="url" required value="https://github.com/agentjido/jido" aria-label="Public GitHub repository URL"><input id="ref" name="ref" value="v2.3.3" aria-label="Git ref"><button id="submit">Index repo</button></form>
+<form id="form"><input id="url" name="url" required value="https://github.com/agentjido/jido" aria-label="Public GitHub repository URL"><input id="ref" name="ref" value="HEAD" aria-label="Git ref"><button id="submit">Index repo</button></form>
 <div id="status" class="status">Ready for a public GitHub repository.</div>
 <section id="results" class="hidden">
 <div id="metrics" class="grid"></div>

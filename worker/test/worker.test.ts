@@ -16,6 +16,7 @@ describe('worker routes', () => {
     expect(html).toContain('jido-cartographer');
     expect(html).toContain('One lightweight Jido agent per source file');
     expect(html).toContain('/api/index');
+    expect(html).toContain('name="ref" value="HEAD"');
   });
 
   it('routes indexing and result requests to the container', async () => {

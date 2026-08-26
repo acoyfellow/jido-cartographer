@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-08-26T10:33:00Z",
+  "deployment": "https://jido-cartographer.coy.workers.dev/",
+  "runner": "cmux WKWebView",
+  "workspace": "workspace:1",
+  "surface": "surface:454",
+  "feature": "test/live/deployment.feature",
+  "result": "pass",
+  "scenarios": [
+    {"name": "The deployment presents its identity over HTTPS", "result": "pass"},
+    {"name": "The index form has useful defaults", "result": "pass", "evidence": {"repository": "https://github.com/agentjido/jido", "ref": "HEAD"}},
+    {"name": "The layout remains usable on a mobile viewport", "result": "pass", "evidence": {"viewport": [390, 844], "horizontal_overflow": false}},
+    {"name": "A non-GitHub host fails closed in the browser", "result": "pass", "evidence": {"results_hidden": true}},
+    {"name": "A valid public repository starts an asynchronous index", "result": "pass", "evidence": {"http_status": 202, "status_history": ["Fetching bounded snapshot…", "Agents running… 1"]}},
+    {"name": "The asynchronous index reaches a terminal success state", "result": "pass", "evidence": {"status": "complete", "repository": "agentjido/jido", "ref": "v2.3.3"}},
+    {"name": "The deployed aggregate matches the pinned repository facts", "result": "pass", "evidence": {"files": 297, "lines": 78420, "symbols": 2840, "edges": 1104, "agents": 297}},
+    {"name": "The UI renders measured timing instead of a claim", "result": "pass", "evidence": {"analysis_ms": 306, "total_ms": 671}},
+    {"name": "The UI renders the deterministic language breakdown", "result": "pass", "evidence": {"Elixir": 296, "Shell": 1}},
+    {"name": "The UI renders dependency and source-file details", "result": "pass", "evidence": {"visible_edge_rows": 121, "source_rows": 297, "rows_have_five_cells": true}}
+  ],
+  "regression": {
+    "reported_url": "https://github.com/acoyfellow/my-ax",
+    "cause": "The form retained the repository-specific v2.3.3 ref when only the URL changed.",
+    "fix": "The deployed default ref is HEAD.",
+    "live_result": "Mapped acoyfellow/my-ax at HEAD"
+  }
+}
