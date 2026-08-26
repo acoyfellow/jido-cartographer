@@ -1,0 +1,6 @@
+.git
+_build
+deps
+worker/node_modules
+worker/.wrangler
+benchmark-results.json

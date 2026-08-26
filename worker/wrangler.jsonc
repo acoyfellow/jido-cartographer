@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jido-cartographer",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-24",
+  "compatibility_flags": ["nodejs_compat"],
+  "account_id": "bfcb6ac5b3ceaf42a09607f6f7925823",
+  "workers_dev": true,
+  "containers": [
+    {
+      "class_name": "CartographerContainer",
+      "image": "../Dockerfile",
+      "max_instances": 1,
+      "instance_type": "basic"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "CARTOGRAPHER",
+        "class_name": "CartographerContainer"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["CartographerContainer"]
+    }
+  ]
+}

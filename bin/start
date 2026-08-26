@@ -1,0 +1,7 @@
+#!/bin/sh
+exec elixir --no-halt -e '
+Application.put_env(:jido_cartographer, :port, String.to_integer(System.get_env("PORT", "8080")))
+Application.put_env(:jido_cartographer, :start_server, true)
+Application.put_env(:jido_cartographer, JidoCartographer.Jido, max_tasks: 2_500, agent_pools: [])
+{:ok, _} = Application.ensure_all_started(:jido_cartographer)
+'

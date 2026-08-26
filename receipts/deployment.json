@@ -1,0 +1,31 @@
+{
+  "deployed_at": "2026-08-26T10:06:00Z",
+  "worker_url": "https://jido-cartographer.coy.workers.dev",
+  "worker_version_id": "65200b6b-e977-4fd9-b07b-7614677a40c1",
+  "container_application_id": "a03b27e8-4359-4438-a6ee-05f8fa148c28",
+  "container_image_digest": "sha256:bdb8450ba27b9a8eecfc8fc7aedaa49a17709bedaa13756f50cc82b9048b5de3",
+  "verification": {
+    "home_status": 200,
+    "home_sentinels": true,
+    "worker_health": {
+      "ok": true,
+      "service": "jido-cartographer-worker"
+    },
+    "container_health": {
+      "ok": true,
+      "service": "jido-cartographer",
+      "version": "0.1.0"
+    },
+    "repository": "agentjido/jido",
+    "ref": "v2.3.3",
+    "files": 297,
+    "agents_spawned": 297,
+    "bytes": 2432272,
+    "lines": 78420,
+    "symbols": 2840,
+    "dependency_edges": 1104,
+    "fetch_ms": 353,
+    "analysis_ms": 204,
+    "total_ms": 557
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "otp": "29",
+  "schedulers": 14,
+  "elixir": "1.20.3",
+  "repository": {
+    "owner": "agentjido",
+    "ref": "v2.3.3",
+    "url": "https://github.com/agentjido/jido",
+    "repo": "jido"
+  },
+  "summary": {
+    "bytes": 2432272,
+    "symbols": 2840,
+    "lines": 78420,
+    "dependencies": 1104,
+    "files": 297,
+    "languages": [
+      {
+        "bytes": 2417169,
+        "lines": 77842,
+        "language": "Elixir",
+        "files": 296
+      },
+      {
+        "bytes": 15103,
+        "lines": 578,
+        "language": "Shell",
+        "files": 1
+      }
+    ]
+  },
+  "measured_at": "2026-08-26T08:12:16.637576Z",
+  "architecture": "aarch64-apple-darwin25.6.0",
+  "timing": {
+    "concurrency": 112,
+    "source_bytes": 2432272,
+    "skipped_entries": 72,
+    "agents_spawned": 297,
+    "analysis_ms": 6,
+    "fetch_ms": 1038,
+    "total_ms": 1049
+  }
+}
