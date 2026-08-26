@@ -8,7 +8,7 @@ Give it a public GitHub repository. It downloads a bounded source snapshot, star
 
 ## What it shows
 
-- One Jido agent and one supervised task process per supported source file.
+- One Jido agent and one BEAM task process per supported source file.
 - Bounded `Task.async_stream/3` fan-out across BEAM schedulers.
 - Deterministic language, symbol, import, and dependency extraction.
 - Aggregate file, line, byte, symbol, language, edge, and timing metrics.
